@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Carro : Vehicule
+public class Carro : Vehiculo
 {
     public int numeroPuertas;
     

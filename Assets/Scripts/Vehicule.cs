@@ -1,8 +1,6 @@
-using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR;
 
 public class Vehicule : MonoBehaviour
 {
@@ -21,13 +19,14 @@ public class Vehicule : MonoBehaviour
         Debug.Log(nombre + " está frenando ");
     }
 
-    public void Tanquear(int cantidad) {
+    public void Tanquear(int cantidad)
+    {
         combustibleActual += cantidad;
         if (combustibleActual > capacidadCombustible)
         {
             combustibleActual = capacidadCombustible;
         }
 
-        Debug.Log(nombre + " a tanqueado.Combustible actual "+combustibleActual );
+        Debug.Log(nombre + " a tanqueado.Combustible actual " + combustibleActual);
     }
 }
