@@ -2,17 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UnoGuerrero : MonoBehaviour
+public class UnoGuerrero : UnoPersonaje
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public int energia = 0;
+    public override string Ataque()
     {
-        
+
+        return clase + " está " + ataque + " a un mounstruo con " + arma + " y le causó +" + danio + " de daño y perdió "+energia+" de energía";
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public override string Defensa()
     {
-        
+
+        return clase + " está " + defensa + " de un mounstruo con " + arma + " y se está defendiendo ";
+
     }
 }

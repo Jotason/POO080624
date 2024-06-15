@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class UnoPersonaje : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+
+    [SerializeField] public string clase = "";
+    [SerializeField] public string arma = "";
+    [SerializeField] public string ataque = "";
+    [SerializeField] public string defensa = "";
+    [SerializeField] public int danio = 1;
+
+    public virtual string Ataque() {
+
+        return clase + " está " +ataque+ " a un mounstruo con " +arma+  " y le causó +" + danio+" de daño";
+    
     }
 
-    // Update is called once per frame
-    void Update()
+    public virtual string Defensa()
     {
-        
+
+        return clase + " está " + defensa + " de un mounstruo con " + arma + " y se está defendiendo ";
+
     }
 }
